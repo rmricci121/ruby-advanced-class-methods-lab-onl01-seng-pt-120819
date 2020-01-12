@@ -17,6 +17,7 @@ class Song
   end
   
   def self.new_by_name(name)
+<<<<<<< HEAD
     song = self.new
     song.name = name
     song
@@ -31,6 +32,9 @@ class Song
   
   def self.find_by_name(name)
      @@all.find{|song| song.name == name}
+=======
+    song = self.new_by_name(name)
+>>>>>>> c5306543d84fcfa94d82fca2bd1d98e35e5d9508
   end
 
   def self.find_or_create_by_name(name)
